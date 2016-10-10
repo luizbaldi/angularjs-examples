@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+	<title>Nested Controllers</title>
+	<script src="../js/angular.min.js"></script>
+	<script src="js/module/app.js"></script>
+	<script src="js/controller/CarController.js"></script>
+	<script src="js/controller/FuscaController.js"></script>
+</head>
+<body>
+	<div ng-controller="CarController">
+		<b> [CarController] </b> Type: {{type}} - Name: {{name}}
+		<div ng-controller="FuscaController">
+			<b> [FuscaController] </b> Type: {{type}} - Name: {{name}}
+		</div>
+	</div>
+</body>
+</html>
