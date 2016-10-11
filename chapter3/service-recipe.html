@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+	<title>Service Recipe</title>
+	<script src="../js/angular.min.js"></script>
+	<script src="js/module/app.js"></script>
+	<script src="js/service/TwitterTokenService.js"></script>
+	<script src="js/controller/TwitterController.js"></script>
+</head>
+<body>
+	<div ng-controller="TwitterController">
+		<span>Token: (by service) {{token}}</span>
+	</div>
+</body>
+</html>
