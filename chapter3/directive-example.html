@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+	<title>Two way data binding</title>
+	
+	<script src="../js/angular.min.js"></script>
+	<script src="js/module/app.js"></script>
+	<script src="js/controller/UserController.js"></script>
+	<script src="js/directive/SimpleDirective.js"></script>
+</head>
+<body ng-controller="UserController">
+	<div>
+		<h2 simple-directive></h2>
+		<hr />
+		<p>Welcome, {{user.name}}</p>
+		<hr />
+		<footer>
+			<div simple-directive></div>
+		</footer>
+	</div>
+</body>
+</html>
