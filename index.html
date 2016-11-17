@@ -9,18 +9,21 @@
 
 	<!-- JS Files -->
 	<script src="js/angular.min.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="container">
 		<div class="jumbotron text-center">
 			<h2>AngularJS - Examples</h2>
 			<h4>This repository was created to store all examples from the book: <i>"AngularJS - Uma abordagem prática e objetiva"</i></h4>
+            <h6>Click to expand examples from chapters</h6>
 		</div>
 	</div>
 
 	<div class="container-fluid">
         <div class="row-fluid text-center">
-            <div class="col-xs-6">
+            <div class="col-xs-12">
                 <div class="panel panel-default ">
                     <div id="chapterOne" rol="tab" class="panel-heading">
                         <h4 class="panel-title">
@@ -30,7 +33,7 @@
                             </a>
                         </h4>
                     </div>
-                    <div role="tabpanel" class="panel-collapse collapse in" id="chapterOneTitle">
+                    <div role="tabpanel" class="panel-collapse collapse" id="chapterOneTitle">
                         <ul class="list-group">
                             <li class="list-group-item">
                                 <i>Empty</i>
@@ -48,7 +51,7 @@
                             </a>
                         </h4>
                     </div>
-                    <div role="tabpanel" class="panel-collapse collapse in" id="chapterTwo">
+                    <div role="tabpanel" class="panel-collapse collapse" id="chapterTwo">
                         <ul class="list-group">
                             <li class="list-group-item">
                                 <a href="chapter2/hello-name.html">Simple two-hay data binding example</a>
@@ -60,13 +63,13 @@
                 <div class="panel panel-default ">
                     <div rol="tab" class="panel-heading">
                         <h4 class="panel-title">
-                            <a href="#chapterTwo" data-toggle="collapse">
+                            <a href="#chapterThree" data-toggle="collapse">
                                 <i class="fa fa-user"></i>
                                 Chapter Three
                             </a>
                         </h4>
                     </div>
-                    <div role="tabpanel" class="panel-collapse collapse in" id="chapterTwo">
+                    <div role="tabpanel" class="panel-collapse collapse" id="chapterThree">
                         <ul class="list-group">
                             <li class="list-group-item">
                                 <a href="chapter3/hello-world-controller.html">Simple Controller Example</a>
@@ -82,6 +85,12 @@
                             </li>
                             <li class="list-group-item">
                                 <a href="chapter3/service-recipe.html">Service Recipe</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="chapter3/two-way-binding.html">Two-Way data bind</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="chapter3/directive-example.html">Directive example</a>
                             </li>
                         </ul>
                     </div>

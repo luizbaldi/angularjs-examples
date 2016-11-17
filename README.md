@@ -7,5 +7,8 @@ The idea behind this simple repository is that if you clone the project in your 
 ### Chapter Two:
 Introduction to AngualarJS with a simple two-way data binding example
 
+### Chapter Three:
+An approach to scope and nested scopes inside Angular, with all the main components needed to build a robust web application, such as Controllers, Modules, Services and Directives. Besides that, this chapters exaplains about dependecy injection and Angular basic structure.
+
 ## Contributors
 Luiz P. Baldi
