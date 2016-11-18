@@ -3,6 +3,9 @@ This repository was created to store all examples from the book: AngularJS - Uma
 
 The idea behind this simple repository is that if you clone the project in your computer you can run all the examples because AngularJS is a frontend framework.
 
+## Demo
+https://luizbaldi.github.io/angularjs-examples/
+
 ## Chapters Summary
 ### Chapter Two:
 Introduction to AngualarJS with a simple two-way data binding example
