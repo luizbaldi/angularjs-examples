@@ -1,4 +1,4 @@
-app.factory('$TwitterTokenService', ['$twitterApiToken', 
+chapter3.factory('$TwitterTokenService', ['$twitterApiToken', 
 	function($twitterApiToken) {
 		var f = {};
 		f.getToken = function() {

@@ -1,4 +1,4 @@
-app.controller('UserController', function($scope) {
+chapter3.controller('UserController', function($scope) {
 	$scope.user = {
 		name: "Luiz Baldi",
 		account: "23840",
