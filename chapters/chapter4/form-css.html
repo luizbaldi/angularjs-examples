@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="chapter4">
+<head>
+	<title>Form with CSS</title>
+
+	<link rel="stylesheet" href="css/style-chapter4.css">
+	<!-- JS Files -->
+	<script src="../../js/angular.min.js"></script>
+
+	<script src="js/module/chapter4.js"></script>
+	<script src="js/controller/FormController.js"></script>
+</head>
+<body>
+	<div ng-controller="FormController">
+		<form novalidate="novalidate">
+			<label for="name">Name:</label> 
+			<input type="text" ng-model="user.name" name="name" required>
+			<br />
+			<label for="gender">Gender:</label> 
+			<input type="radio" ng-model="user.gender" name="gender" value="m" required />
+			Male
+			<input type="radio" ng-model="user.gender" name="gender" value="f" />
+			Female
+			<br />
+			<button ng-click="save(user)">Save</button>
+		</form>
+
+		<b>{{user | json}}</b>
+	</div>
+</body>
+</html>

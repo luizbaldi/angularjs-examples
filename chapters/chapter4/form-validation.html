@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="chapter4">
+<head>
+	<title>Form with Validation</title>
+
+	<link rel="stylesheet" href="css/style-chapter4.css">
+	<!-- JS Files -->
+	<script src="../../js/angular.min.js"></script>
+
+	<script src="js/module/chapter4.js"></script>
+	<script src="js/controller/FormController.js"></script>
+</head>
+<body>
+	<div ng-controller="FormController">
+		<form name="userForm" novalidate="novalidate">
+			<label for="name">Name:</label> 
+			<input type="text" ng-model="user.name" name="name">
+			<br />
+			<label for="email">Email:</label> 
+			<input type="text" ng-model="user.email" name="email" required>
+			<br />
+			<div class="validation" ng-show="userForm.email.$dirty && userForm.email.$invalid">
+				<div ng-show="userForm.email.$error.required">
+					Please fill the input with an email
+				</div>
+				<div ng-show="userForm.email.$error.email">
+					Please enter a valid email
+				</div>
+			</div>
+			<button ng-click="save(user)">Save</button>
+		</form>
+
+		<b>{{user | json}}</b>
+	</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+input {
+	padding: 10px;
+}
+
+input.ng-invalid.ng-dirty {
+	background-color: #FA787E;
+	border: 1px solid #CCC;
+}
+
+input.ng-valid.ng-dirty {
+	background-color: #78FA89;
+	border: 1px solid #ccc;
+}
+
+.validation div {
+	background-color: #f1f1f1;
+	border: 1px solid red;
+	padding: 5px;
+	margin-top: 2px;
+	width: 200px;
+}
