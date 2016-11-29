@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="chapter4">
+<head>
+	<title>ng-class for mapping classes</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style-chapter4.css">
+	<!-- JS Files -->
+	<script src="../../js/angular.min.js"></script>
+
+	<script src="js/module/chapter4.js"></script>
+	<script src="js/controller/ClassController.js"></script>
+</head>
+<body ng-controller="ClassController">
+	<div ng-class="{error: isError, warning: isWarning}">I'm a text!</div>
+	<button ng-click="showError()">Simulate Error</button>
+	<button ng-click="showWarning()">Simulate Warning</button>
+</body>
+</html>

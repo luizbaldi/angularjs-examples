@@ -19,3 +19,11 @@ input.ng-valid.ng-dirty {
 	margin-top: 2px;
 	width: 200px;
 }
+
+.error {
+	background-color: red;
+}
+
+.warning {
+	background-color: yellow;
+}
