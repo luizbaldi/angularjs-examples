@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="chapter6">
+<head>
+	<title>False Scope</title>
+
+	<!-- JS Files -->
+	<script src="../../js/angular.min.js"></script>
+	
+	<script src="js/module/chapter6.js"></script>
+	<script src="js/controller/ParentController.js"></script>
+	<script src="js/directive/dirTrueScope.js"></script>
+</head>
+<body ng-controller="ParentController">
+	<div>
+		<span>-scope: true</span>
+		<br />
+		<span>Parent Count: {{ count }}</span>
+		<div dir-true-scope></div>
+	</div>
+	<hr />
+	<p>In this example, we set the count property on parent scope, and after load the linking function from our custom directive, we see the different values because we created a new scope</p>
+</body>
+</html>
