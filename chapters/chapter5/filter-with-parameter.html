@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="chapter5">
+<head>
+	<title>Filter with parameter</title>
+
+	<!-- JS Files -->
+	<script src="../../js/angular.min.js"></script>
+
+	<script src="js/module/chapter5.js"></script>
+
+	<script src="js/controller/UserController.js"></script>
+	<script src="js/filter/lettercase.js"></script>	
+</head>
+<body ng-controller="UserController">
+	<div>UpperCase: {{name | lettercase:'upper'}}</div>
+	<br />
+	<div>LowerCase: {{name | lettercase:'lower'}}</div>
+</body>
+</html>

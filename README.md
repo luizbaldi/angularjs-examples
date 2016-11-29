@@ -16,5 +16,8 @@ An approach to scope and nested scopes inside Angular, with all the main compone
 ### Chapter Four:
 Focused on forms and validations through Angular, this chapters shows the ways we can apply styles and manipulate data on forms, always using two way data-binding and the main directives from the framework.
 
+### Chapter Five:
+Shows all the concepts around filters in Angular, how to create new filters, manipulate parameters and good practices.
+
 ## Contributors
 Luiz P. Baldi
