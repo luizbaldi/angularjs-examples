@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="chapter6">
+<head>
+	<title>Bindings in isolated scope</title>
+
+	<script src="../../js/angular.min.js"></script>
+
+	<script src="js/module/chapter6.js"></script>
+
+	<script src="js/controller/ParentController.js"></script>
+	<script src="js/directive/isolatedScopeBinding.js"></script>
+</head>
+<body ng-controller="ParentController">
+	<div>
+		<span>Parent-counter: {{ count }}</span>
+		<br />
+		<button ng-click="incrementCount()">Increment parent counter</button>
+		<br />
+		<div isolated-scope-binding count-alert-handler="alertCount(label, parentControllerCount)"
+			count="count" label="Total: " />
+		<hr />
+		This example was simply amazing in my opinion, basically we are acessing the parent scope throught a directive with isolated scope, showing how to communicate and control the scopes in the application
+	</div>
+</body>
+</html>

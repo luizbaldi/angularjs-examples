@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="chapter6">
+<head>
+	<title>Isolated Scope Directive</title>
+
+	<script src="../../js/angular.min.js"></script>
+
+	<script src="js/module/chapter6.js"></script>
+
+	<script src="js/controller/ParentController.js"></script>
+	<script src="js/directive/dirObjectScope.js"></script>
+</head>
+<body ng-controller="ParentController">
+	<span>scope: object</span>
+	<br />
+	<span>Parent count: {{ count }}</span>
+	<div dir-object-scope />
+	<hr />
+	This example we created a isolated scope declaring the scope atribute from directive as an new object
+</body>
+</html>

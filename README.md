@@ -19,5 +19,8 @@ Focused on forms and validations through Angular, this chapters shows the ways w
 ### Chapter Five:
 Shows all the concepts around filters in Angular, how to create new filters, manipulate parameters and good practices.
 
+### Chapter Six:
+This chapter had a detailed approach on angular directives, showing how to create them, how every attribute works and how to manipulate the scopes inside directives, using controllers and understanding all the directives lifecycle.
+
 ## Contributors
 Luiz P. Baldi
