@@ -1,0 +1,1 @@
+var chapter8 = angular.module('chapter8', []);

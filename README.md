@@ -25,5 +25,11 @@ This chapter had a detailed approach on angular directives, showing how to creat
 ### Chapter Seven:
 More of a concept chapter than a practical one. This chapter detailed the full lifecycle of an application inside Angular, simulating how the framework works 'behing the scenes'.
 
+### Chapter Eight:
+Simple chapter showing how events work on AngularJS, with example of $emit and $broadcast.
+
+### Chapter Nine:
+An introduction to Angular Routing using ngRoute. Doing some researches I found that Angular has another router module, called ui.router, which can be used too and is recommended for bigger applications.
+
 ## Contributors
 Luiz P. Baldi

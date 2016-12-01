@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="chapter8">
+<head>
+	<title>Events in AngularJS</title>
+
+	<!-- JS Files -->
+	<script src="../../js/angular.min.js"></script>
+
+	<script src="js/module/chapter8.js"></script>
+	<script src="js/controller/TopController.js"></script>
+	<script src="js/controller/MiddleController.js"></script>
+	<script src="js/controller/BottomController.js"></script>
+</head>
+<body>
+	<div ng-controller="TopController">
+		TopController count: {{ count }}
+
+		<div ng-controller="MiddleController">
+			<b>MiddleController count: {{ count }}</b>
+			<button ng-click="$emit('myEvent')">
+				$emit('myEvent') from MiddleController $scope 
+			</button>
+
+			<button ng-click="$broadcast('myEvent')">
+				$broadcast('myEvent') from MiddleController $scope 
+			</button>
+
+			<div ng-controller="BottomController">
+				BottomController count: {{ count }}
+			</div> <!-- Bottom controller -->
+		</div> <!-- Middle controller -->
+	</div> <!-- Top controller -->
+	<hr />
+	This example shows the difference between $emit and $broadcast, showing how they fire events and manipulates them.
+</body>
+</html>

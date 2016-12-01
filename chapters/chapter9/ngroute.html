@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="chapter9">
+<head>
+	<title>Angular Routing</title>
+
+	<script src="../../js/angular.min.js"></script>
+	<script src="../../js/angular-route.min.js"></script>
+
+	<script src="js/module/chapter9.js"></script>
+	<script src="js/controller/MainPageController.js"></script>
+	<script src="js/controller/BookController.js"></script>
+	<script src="js/controller/ChapterController.js"></script>
+</head>
+<body>
+	<div ng-controller="MainPageController">
+		<ul>
+			<li>
+				<a href="#!/book/1">Book 1</a>
+			</li>
+			<li>
+				<a href="#!/book/1/chapter/2">Book 1 - Chapter 2</a>
+			</li>
+			<li>
+				<a href="#!/brokenlink/1">Broken link (otherwise route)</a>
+			</li>
+		</ul>
+
+		<!-- Route template content, stored on ng-view -->
+		<div id="ng-view" ng-view></div>
+
+		<fieldset>
+			<legend>Some data from $route and $routeParams</legend>
+			<pre>$route.current.templateUrl = {{ $route.current.templateUrl }}</pre>
+			<pre>$route.current.params = {{ $route.current.params }}</pre>
+			<pre>$routeParams = {{ $routeParams }}</pre>
+		</fieldset>
+	</div>
+</body>
+</html>
