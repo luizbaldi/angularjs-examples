@@ -22,5 +22,8 @@ Shows all the concepts around filters in Angular, how to create new filters, man
 ### Chapter Six:
 This chapter had a detailed approach on angular directives, showing how to create them, how every attribute works and how to manipulate the scopes inside directives, using controllers and understanding all the directives lifecycle.
 
+### Chapter Seven:
+More of a concept chapter than a practical one. This chapter detailed the full lifecycle of an application inside Angular, simulating how the framework works 'behing the scenes'.
+
 ## Contributors
 Luiz P. Baldi
