@@ -31,5 +31,11 @@ Simple chapter showing how events work on AngularJS, with example of $emit and $
 ### Chapter Nine:
 An introduction to Angular Routing using ngRoute. Doing some researches I found that Angular has another router module, called ui.router, which can be used too and is recommended for bigger applications.
 
+### Chapter Ten:
+How AngularJS deal with internationalization and location (i18n and l10n)
+
+### Chapter Eleven:
+An amazing chapter showing how AngularJS communicates with the server side of application (backend). Normally the frontend developers have this "problem" of how the sides of application (frontend and backend) will communicate, and this chapters shows how to deal with this situation.
+
 ## Contributors
 Luiz P. Baldi
