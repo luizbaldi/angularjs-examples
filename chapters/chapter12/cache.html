@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="chapter12">
+<head>
+	<title>Cache</title>
+
+	<!-- JS -->
+	<script src="../../js/angular.min.js"></script>
+
+	<script src="js/module/chapter12.js"></script>
+	<script src="js/controller/CacheController.js"></script>
+	
+
+</head>
+<body ng-controller="CacheController">
+	<h4>cache info</h4>
+	<pre>{{ info | json }}</pre>
+
+	<h4>cache values</h4>
+	<pre>{{ elements | json }}</pre>
+</body>
+</html>

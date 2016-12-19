@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="chapter12">
+<head>
+	<title>Promises</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style-chapter12.css">
+
+	<!-- JS -->
+	<script src="../../js/angular.min.js"></script>
+
+	<script src="js/module/chapter12.js"></script>
+	<script src="js/controller/TimeSimulatorController.js"></script>
+	<script src="js/service/TimeService.js"></script>	
+
+</head>
+<body ng-controller="TimeSimulatorController">
+	<div>
+		<span>[Simulator] Change weather:</span>
+		<button ng-class="{checked: weather == 'rainy', unchecked: weather != 'rainy'}" 
+		ng-click="updateWeather('rainy')">
+			Rainy	
+		</button>
+		<span />
+		<button ng-class="{checked: weather == 'sunny', unchecked: weather != 'sunny'}"
+		ng-click="updateWeather('sunny')">
+			Sunny
+		</button>
+		<hr />
+	</div>
+
+	<div class="activity">
+		<div ng-bind="message"></div>
+	</div>
+</body>
+</html>
